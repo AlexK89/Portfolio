@@ -1,0 +1,318 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto';
+}
+p,
+h1,
+h2,
+h3,
+h4 {
+  cursor: default;
+}
+
+#body {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    background-image: url('./img/background-pic.jpg');
+    background-size: cover;
+}
+
+#content {
+    width: 100%;
+    /*padding-left: 0;
+    padding-right: 0;*/
+}
+
+.navbar-right a {
+    font-weight: 700;
+}
+
+.navbar-brand {
+    font-family: 'Lobster';
+    font-size: 2.3em;
+    padding-right: 5px;
+}
+
+.navbar-nav>li>a {
+    line-height: 20px;
+    margin-top: 7px;
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+.home {
+    padding-top: 15%;
+    padding-bottom: 30%;
+    color: #fff;
+}
+
+.home h1 {
+    font-size: 3em;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1)
+}
+
+.home h2 {
+    padding-top: 100px;
+    font-family: 'Lobster';
+    letter-spacing: 2px;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1)
+}
+
+.navbar-default {
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 5px solid black;
+    border-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0;
+}
+
+.navbar-default li {
+    text-transform: uppercase;
+}
+
+.home hr, .skills hr, .portfolio hr, .contacts hr {
+    border-top: 1px solid rgba(225, 225, 225, 0.6);
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 20px;
+}
+
+
+/*Buttons section
+============================*/
+
+.buttons a:nth-of-type(even) {
+    font-size: 20px;
+    padding-top: 7px;
+    padding-bottom: 42px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-right: 20px;
+    margin-top: 20px;
+    background-color: #4caf50;
+    color: #fff;
+    transition: 0.3s;
+    -webkit-font-smoothing: antialiased;
+}
+
+.buttons a:nth-of-type(odd) {
+    font-size: 20px;
+    padding-top: 7px;
+    padding-bottom: 42px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-right: 20px;
+    margin-top: 20px;
+    background-color: #3f51b5;
+    color: #fff;
+    transition: 0.3s;
+    -webkit-font-smoothing: antialiased;
+}
+
+.buttons a:hover {
+    -webkit-font-smoothing: antialiased;
+    padding-left: 50px;
+    padding-right: 50px;
+    transition: 0.4s;
+}
+
+
+/*Skills section
+=============================*/
+
+.section2 {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.skills h1, .portfolio h1, .contacts h1 {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    color: #3f51b5;
+    font-weight: 700;
+    text-shadow: 0px 4px 3px rgba(63, 81, 181, 0.1), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1)
+}
+
+.skill-pic {
+    font-size: 7em;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.skill-pic:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+.skill-name {
+    font-weight: 700;
+    font-size: 1.2em;
+    padding-bottom: 100px;
+}
+
+.skill-element:nth-of-type(even) {
+    color: #3f51b5;
+    transition: 0.1s;
+}
+
+.skill-element:nth-of-type(odd) {
+    color: #4caf50;
+    transition: 0.3s;
+}
+
+
+/*Portfolio
+=========================*/
+
+.portfolio {
+    padding-bottom: 200px;
+}
+
+.portfolio h1 {
+    color: #fff;
+    padding-top: 100px;
+}
+
+.portfolio .thumbnail {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.portfolio div {
+    padding-top: 10px;
+}
+
+.caption h3 {
+    color: #3f51b5;
+    font-weight: 700;
+    text-shadow: 0px 4px 3px rgba(63, 81, 181, 0.1), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+.caption p {
+    color: grey;
+    font-weight: 700;
+    text-shadow: 0px 4px 3px rgba(63, 81, 181, 0.1), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+.caption a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #4caf50;
+}
+
+.caption a:hover {
+    background-color: #3f51b5;
+
+}
+
+
+/*Contact section
+===========================*/
+
+.section4 {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.mdl-textfield__input {
+    margin-bottom: 5px;
+    padding-bottom: 0;
+}
+
+form {
+    padding-top: 0;
+}
+
+form div {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+form:last-child {
+    padding-bottom: 150px;
+}
+
+form:last-child a {
+    font-size: 20px;
+    padding-top: 7px;
+    padding-bottom: 42px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-transform: none;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #3f51b5;
+}
+
+form:last-child a:hover {
+    background-color: #4caf50;
+}
+
+
+/*Footer section
+===============================*/
+
+footer {
+    background-color: #2C3E50;
+    color: #fff;
+}
+
+footer h2 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    text-shadow: 0px 4px 3px rgba(63, 81, 181, 0.1), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+footer div {
+  padding-bottom: 50px;
+}
+
+.location-details {
+    padding-top: 10px;
+}
+
+.contact-me-phone a, .contact-me-email a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (max-width:1200px) {
+    .caption h3 {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width:500px) {
+    .navbar-brand {
+        font-size: 1.7em;
+    }
+    .home h1 {
+        font-size: 2em;
+    }
+    .buttons a:nth-of-type(even) {
+        font-size: 1em;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .buttons a:nth-of-type(odd) {
+        font-size: 1em;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
