@@ -5,7 +5,7 @@ html {
 body {
     font-family: 'Roboto';
 }
-p,
+
 h1,
 h2,
 h3,
@@ -26,27 +26,69 @@ h4 {
 
 #content {
     width: 100%;
-    /*padding-left: 0;
-    padding-right: 0;*/
 }
 
-.navbar-right a {
-    font-weight: 700;
+.navbar-default {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0;
+    min-height: 60px;
+    margin: 0;
 }
-
+.navbar-fixed-top {
+    border-width: 0;
+}
+.navbar-header {
+  height: 60px;
+}
 .navbar-brand {
     font-family: 'Lobster';
     font-size: 2.3em;
-    padding-right: 5px;
+    height: inherit;
+    padding-top: 18px;
+    padding-right: 0;
 }
-
+.navbar-toggle {
+  margin-top: 13px;
+}
+.navbar-default li {
+    text-transform: uppercase;
+    height: inherit;
+}
+.navbar-right a {
+    font-weight: 700;
+}
+.navbar-nav {
+  min-height: 60px;
+  padding-right: 20px;
+}
+.mdl-button {
+  font-size: 1.1em;
+}
+.navbar-nav>li {
+  height: 60px;
+  -webkit-transform: skew(350deg);
+	   -moz-transform: skew(350deg);
+	     -o-transform: skew(350deg);
+}
+.navbar-nav>li:hover:nth-of-type(even) {
+  background: #4caf50;
+  transition: .4s;
+}
+.navbar-nav>li:hover:nth-of-type(odd) {
+  background: #3f51b5;
+  transition: .4s;
+}
+.navbar-default .navbar-nav>li>a:hover {
+  color: #fff;
+}
 .navbar-nav>li>a {
-    line-height: 20px;
-    margin-top: 7px;
-    padding-top: 10px;
+    padding-top: 20px;
     padding-bottom: 0;
+    height: inherit;
 }
-
+/*first section*/
+/*===================*/
 .home {
     padding-top: 15%;
     padding-bottom: 30%;
@@ -65,71 +107,46 @@ h4 {
     text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1)
 }
 
-.navbar-default {
-    background-color: rgba(255, 255, 255, 0.95);
-    border: 5px solid black;
-    border-color: rgba(255, 255, 255, 0.1);
-    border-radius: 0;
-}
-
-.navbar-default li {
-    text-transform: uppercase;
-}
-
 .home hr, .skills hr, .portfolio hr, .contacts hr {
     border-top: 1px solid rgba(225, 225, 225, 0.6);
     max-width: 80%;
     margin-left: 10%;
     margin-right: 10%;
-    padding-bottom: 20px;
 }
-
-
-/*Buttons section
-============================*/
-
-.buttons a:nth-of-type(even) {
-    font-size: 20px;
-    padding-top: 7px;
-    padding-bottom: 42px;
-    padding-left: 40px;
-    padding-right: 40px;
-    text-decoration: none;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    margin-right: 20px;
-    margin-top: 20px;
-    background-color: #4caf50;
-    color: #fff;
-    transition: 0.3s;
-    -webkit-font-smoothing: antialiased;
+.buttons p {
+  transition: .2s;
+  display: inline-block;
+  margin: 0;
+  margin-right: 20px;
+  margin-top: 20px;
 }
-
-.buttons a:nth-of-type(odd) {
-    font-size: 20px;
-    padding-top: 7px;
-    padding-bottom: 42px;
-    padding-left: 40px;
-    padding-right: 40px;
-    text-decoration: none;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    margin-right: 20px;
-    margin-top: 20px;
-    background-color: #3f51b5;
-    color: #fff;
-    transition: 0.3s;
+.buttons p:hover{
     -webkit-font-smoothing: antialiased;
-}
-
-.buttons a:hover {
-    -webkit-font-smoothing: antialiased;
-    padding-left: 50px;
-    padding-right: 50px;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
     transition: 0.4s;
 }
+.buttons p button {
+  font-size: 20px;
+  padding-top: 7px;
+  padding-bottom: 42px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  color: #fff;
+  transition: 0.2s;
+  -webkit-font-smoothing: antialiased;
+}
+.buttons p:nth-of-type(even) button {
+    background-color: #4caf50;
+}
 
-
+.buttons p:nth-of-type(odd) button {
+    background-color: #3f51b5;
+}
 /*Skills section
 =============================*/
 
@@ -174,7 +191,6 @@ h4 {
     transition: 0.3s;
 }
 
-
 /*Portfolio
 =========================*/
 
@@ -206,18 +222,16 @@ h4 {
     font-weight: 700;
     text-shadow: 0px 4px 3px rgba(63, 81, 181, 0.1), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
 }
-.caption a {
+.caption button {
     text-decoration: none;
     color: #fff;
     background-color: #4caf50;
 }
 
-.caption a:hover {
+.caption button:hover {
     background-color: #3f51b5;
 
 }
-
-
 /*Contact section
 ===========================*/
 
@@ -234,16 +248,15 @@ form {
     padding-top: 0;
 }
 
-form div {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+form .col-xs-10 {
+    padding-left: 0;
+    padding-right: 0;
 }
-
 form:last-child {
     padding-bottom: 150px;
 }
 
-form:last-child a {
+form:last-child button {
     font-size: 20px;
     padding-top: 7px;
     padding-bottom: 42px;
@@ -256,7 +269,7 @@ form:last-child a {
     background-color: #3f51b5;
 }
 
-form:last-child a:hover {
+form:last-child button:hover {
     background-color: #4caf50;
 }
 
@@ -275,7 +288,8 @@ footer h2 {
     font-weight: bold;
     text-shadow: 0px 4px 3px rgba(63, 81, 181, 0.1), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
 }
-footer div {
+footer div:last-child {
+  padding-top: 20px;
   padding-bottom: 50px;
 }
 
@@ -293,7 +307,16 @@ footer div {
         font-size: 1.2em;
     }
 }
-
+@media (max-width:767px) {
+  .navbar-nav {
+    padding-right: 0;
+}
+.navbar-nav>li {
+  -webkit-transform: skew(0deg);
+	   -moz-transform: skew(0deg);
+	     -o-transform: skew(0deg);
+}
+}
 @media (max-width:500px) {
     .navbar-brand {
         font-size: 1.7em;
